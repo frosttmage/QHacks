@@ -5,7 +5,6 @@ public class PickupLight : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
 	}
 
 	// Update is called once per frame
@@ -17,7 +16,7 @@ public class PickupLight : MonoBehaviour {
 	{
 		if (other.gameObject.CompareTag ("Player")) {
 			Destroy (gameObject);
-
 		}
 	}
+
 }

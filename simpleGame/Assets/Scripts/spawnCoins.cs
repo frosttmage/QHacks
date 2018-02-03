@@ -3,10 +3,10 @@ using System.Collections;
 
 public class spawnCoins : MonoBehaviour {
 
-	public int maxCoins = 5000;
-	public GameObject coinSprite;
-	public float horizontalDis = 10f;
-	public float[] verticalDis = new float[2];
+	public GameObject light;
+	public GameObject enemy;
+	public float[] lightHorizontalDis = new float[5] ;
+	public float[] cubeHorizontalDis = new float[5] ;
 	public bool down = true;
 
 
@@ -14,16 +14,25 @@ public class spawnCoins : MonoBehaviour {
 
 
 	void Start () {
+		lightHorizontalDis [0] = 12f;
+		lightHorizontalDis [1] = 12f;
+		lightHorizontalDis [2] = 12f;
+		lightHorizontalDis [3] = 12f;
+		lightHorizontalDis [4] = 12f;
+		cubeHorizontalDis [0] = 12f;
+		cubeHorizontalDis [1] = 12f;
+		cubeHorizontalDis [2] = 12f;
+		cubeHorizontalDis [3] = 12f;
+		cubeHorizontalDis [4] = 12f;
 
 		originPosition = transform.position;
 		Spawn ();
-
 	}
 
 	void Spawn()
 	{
-		for (int i = 0; i < maxCoins; i++)
-		{
+		for (int i = 0; i < lightHorizontalDis.Length; i++) {
+			/*
 			int coinFlip = Random.Range (0, 2);
 			int change = Random.Range (0, 2);
 			verticalDis [0] = 0f;
@@ -33,17 +42,27 @@ public class spawnCoins : MonoBehaviour {
 			else {
 				verticalDis [1] = -6f;
 			}
-			Vector2 randomPosition = originPosition + new Vector2 (horizontalDis, verticalDis[change]);
-			if (coinFlip > 0) {
-				Instantiate (coinSprite, randomPosition, Quaternion.identity);
-				originPosition = randomPosition;
-				if (change == 1) {
-					down = !down;
-				}
+			*/
+			Vector2 randomPosition = originPosition + new Vector2 (lightHorizontalDis [i], 6f);
+			//if (coinFlip > 0) {
+			Instantiate (light, randomPosition, Quaternion.identity);
+			originPosition = randomPosition + new Vector2 (0, -6f);
+			/*
+			if (change == 1) {
+				down = !down;
+			}
+			*/
+			/*
 			}
 			else {
-				originPosition = originPosition + new Vector2(horizontalDis, 0f);
+				originPosition = originPosition + new Vector2(horizontalDis[i], 0f);
 			}
+		*/
+		}
+		for (int i = 0; i < cubeHorizontalDis.Length; i++) {
+			Vector2 randomPosition = originPosition + new Vector2 (cubeHorizontalDis[i], 0f);
+			Instantiate (enemy, randomPosition, Quaternion.identity);
+			originPosition = randomPosition;
 		}
 	}
 
