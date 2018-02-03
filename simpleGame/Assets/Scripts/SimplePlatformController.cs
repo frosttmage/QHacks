@@ -81,12 +81,10 @@ public class SimplePlatformController : MonoBehaviour {
 		//Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
 		if (other.gameObject.CompareTag("barrier")) {
 			count = count - 0.5;
-			Debug.Log (gameObject.name);
 			//SetCountText()
 		}
 		else {
 			count = count + 1;
-			Debug.Log (gameObject.name);
 			//SetCountText()
 		}
 

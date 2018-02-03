@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Death.cs" />
      <Compile Include="Assets\Scripts\PickupLight.cs" />
      <Compile Include="Assets\Scripts\SimplePlatformController.cs" />
      <Compile Include="Assets\Scripts\spawnCoins.cs" />
