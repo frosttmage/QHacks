@@ -48,17 +48,17 @@ public class SimplePlatformController : MonoBehaviour {
 
 		anim.SetFloat("Speed", Mathf.Abs(h));
 
-	//	if (h * rb2d.velocity.x < maxSpeed)
-	//		rb2d.AddForce(Vector2.right * h * moveForce);
+	if (h * rb2d.velocity.x < maxSpeed)
+		rb2d.AddForce(Vector2.right * h * moveForce);
 
-	//	if (Mathf.Abs (rb2d.velocity.x) > maxSpeed)
+		if (Mathf.Abs (rb2d.velocity.x) > maxSpeed)
 		rb2d.velocity = new Vector2(Mathf.Sign (rb2d.velocity.x) * maxSpeed, rb2d.velocity.y);
-		/*
+		
 		if (h > 0 && !facingRight)
 			Flip ();
 		else if (h < 0 && facingRight)
 			Flip ();
-		*/
+		
 		if (jump)
 		{
 			anim.SetTrigger("Jump");
@@ -67,26 +67,24 @@ public class SimplePlatformController : MonoBehaviour {
 		}
 	}
 
-	/*
+	
 	void Flip()
 	{
 		facingRight = !facingRight;
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
-	}*/
+	}
 
 	void OnTriggerEnter2D(Collider2D other) 
 	{
 		//Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
 		if (other.gameObject.CompareTag("barrier")) {
 			count = count - 0.5;
-			Debug.Log (gameObject.name);
 			//SetCountText()
 		}
 		else {
 			count = count + 1;
-			Debug.Log (gameObject.name);
 			//SetCountText()
 		}
 

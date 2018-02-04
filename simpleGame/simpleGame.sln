@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simpleGame", "Assembly-CSharp.csproj", "{51EAF579-0FBA-2658-42B5-AA966D52F49E}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simpleGame", "simpleGame.csproj", "{F73F6F22-69C4-E8EF-0C90-6764AE455CA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{51EAF579-0FBA-2658-42B5-AA966D52F49E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51EAF579-0FBA-2658-42B5-AA966D52F49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51EAF579-0FBA-2658-42B5-AA966D52F49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51EAF579-0FBA-2658-42B5-AA966D52F49E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F73F6F22-69C4-E8EF-0C90-6764AE455CA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F73F6F22-69C4-E8EF-0C90-6764AE455CA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F73F6F22-69C4-E8EF-0C90-6764AE455CA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F73F6F22-69C4-E8EF-0C90-6764AE455CA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
