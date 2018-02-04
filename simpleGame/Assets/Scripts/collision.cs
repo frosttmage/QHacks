@@ -21,22 +21,24 @@ public class collision : MonoBehaviour {
 
     // Use this for initialization
     void OnTriggerEnter2D (Collider2D coll) {
-		if (coll.gameObject.CompareTag ("enemy"))
+		if (coll.gameObject.CompareTag ("barrier"))
         {
             
             Debug.Log(coll.gameObject.tag);
-            Debug.Log("Lose light");
-            
-            if (lifelight == 0)
-            {
-                Debug.Log("Game Over");
-            }
+            Debug.Log("hit shadow");
 
-            else
-            {
-                lifelight = lifelight - 1;
-                Debug.Log("Lose Light");
-            }
+            //transform.position = new Vector3(0f, 1.5f, 0f);
+            
+            //if (lifelight == 0)
+            //{
+            //    Debug.Log("Game Over");
+            //}
+
+            //else
+            //{
+            //    lifelight = lifelight - 1;
+            //    Debug.Log("Lose Light");
+            //}
 
         }
 
