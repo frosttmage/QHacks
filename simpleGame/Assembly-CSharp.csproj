@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Death.cs" />
+     <Compile Include="Assets\Scripts\Fog.cs" />
      <Compile Include="Assets\Scripts\FogCollider.cs" />
      <Compile Include="Assets\Scripts\FogMovement.cs" />
      <Compile Include="Assets\Scripts\FogMovement2.cs" />
