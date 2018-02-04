@@ -360,19 +360,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Laure\QHacks\simpleGame
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 75}
-    m_SelectedIDs: c0270000
-    m_LastClickedID: 10176
-    m_ExpandedIDs: 000000006e270000c6280000102a000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 11.999817}
+    m_SelectedIDs: 70270000
+    m_LastClickedID: 10096
+    m_ExpandedIDs: 0000000070270000cc270000c82800006c2900007a290000122a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -400,7 +400,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006e270000c6280000102a0000
+    m_ExpandedIDs: 0000000070270000cc270000c82800006c2900007a290000122a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -518,9 +518,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 9efbffff00000000f42a0000102c00001a2c0000
+    m_SelectedIDs: ea310000
+    m_LastClickedID: 12778
+    m_ExpandedIDs: 80f0ffff58f1ffffa6f4ffff9efbffff00000000562a0000f02a0000b830000002320000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -571,14 +571,14 @@ MonoBehaviour:
     height: 439
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 596.8035712170939
+  lastFramingTime: 961.9304862865042
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5.019427, y: 5.052277, z: 6.609375}
+    m_Target: {x: 2.4405918, y: 4.775536, z: 3.03125}
     speed: 2
-    m_Value: {x: -5.019427, y: 5.052277, z: 6.609375}
+    m_Value: {x: 2.4405918, y: 4.775536, z: 3.03125}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -606,9 +606,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 36.47266
+    m_Target: 41.550533
     speed: 2
-    m_Value: 36.47266
+    m_Value: 41.550533
   m_Ortho:
     m_Target: 1
     speed: 2
